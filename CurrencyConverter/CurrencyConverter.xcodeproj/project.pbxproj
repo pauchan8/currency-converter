@@ -12,6 +12,16 @@
 		22610253289BE53C00600E9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2261024A289BE53C00600E9A /* Main.storyboard */; };
 		22610255289BE53C00600E9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2261024F289BE53C00600E9A /* AppDelegate.swift */; };
 		22610256289BE53C00600E9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22610250289BE53C00600E9A /* SceneDelegate.swift */; };
+		22B9EBFD289BF6C80015C053 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EBFC289BF6C80015C053 /* ConverterViewController.swift */; };
+		22B9EBFF289BF6D40015C053 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EBFE289BF6D40015C053 /* HistoryViewController.swift */; };
+		22B9EC01289BF7810015C053 /* ConverterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EC00289BF7810015C053 /* ConverterPresenter.swift */; };
+		22B9EC04289BF8A20015C053 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EC03289BF8A20015C053 /* UIView+Extensions.swift */; };
+		22B9EC06289CFA550015C053 /* HistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EC05289CFA550015C053 /* HistoryPresenter.swift */; };
+		22B9EC08289CFC5A0015C053 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EC07289CFC5A0015C053 /* Currency.swift */; };
+		22B9EC0A289CFE4A0015C053 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EC09289CFE4A0015C053 /* DateFormatter+Extensions.swift */; };
+		22B9EC0D289CFEE40015C053 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EC0C289CFEE40015C053 /* Error.swift */; };
+		22B9EC0F289D0A640015C053 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EC0E289D0A640015C053 /* NetworkService.swift */; };
+		22B9EC13289E84080015C053 /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B9EC12289E84080015C053 /* HistoryService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		2261024C289BE53C00600E9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2261024F289BE53C00600E9A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22610250289BE53C00600E9A /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		22B9EBFC289BF6C80015C053 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		22B9EBFE289BF6D40015C053 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		22B9EC00289BF7810015C053 /* ConverterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterPresenter.swift; sourceTree = "<group>"; };
+		22B9EC03289BF8A20015C053 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		22B9EC05289CFA550015C053 /* HistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryPresenter.swift; sourceTree = "<group>"; };
+		22B9EC07289CFC5A0015C053 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		22B9EC09289CFE4A0015C053 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		22B9EC0C289CFEE40015C053 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		22B9EC0E289D0A640015C053 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		22B9EC12289E84080015C053 /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +95,11 @@
 			isa = PBXGroup;
 			children = (
 				2261024E289BE53C00600E9A /* Main */,
+				22B9EC02289BF8030015C053 /* Models */,
 				22B9EBFA289BE9BB0015C053 /* Extensions */,
 				22B9EBF7289BE9BB0015C053 /* Modules */,
 				22B9EBFB289BE9BB0015C053 /* Services */,
+				22B9EC0B289CFED40015C053 /* Helpers */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -103,6 +125,8 @@
 		22B9EBF8289BE9BB0015C053 /* Converter */ = {
 			isa = PBXGroup;
 			children = (
+				22B9EBFC289BF6C80015C053 /* ConverterViewController.swift */,
+				22B9EC00289BF7810015C053 /* ConverterPresenter.swift */,
 			);
 			path = Converter;
 			sourceTree = "<group>";
@@ -110,6 +134,8 @@
 		22B9EBF9289BE9BB0015C053 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				22B9EBFE289BF6D40015C053 /* HistoryViewController.swift */,
+				22B9EC05289CFA550015C053 /* HistoryPresenter.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -117,6 +143,8 @@
 		22B9EBFA289BE9BB0015C053 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				22B9EC03289BF8A20015C053 /* UIView+Extensions.swift */,
+				22B9EC09289CFE4A0015C053 /* DateFormatter+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -124,8 +152,26 @@
 		22B9EBFB289BE9BB0015C053 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				22B9EC0E289D0A640015C053 /* NetworkService.swift */,
+				22B9EC12289E84080015C053 /* HistoryService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		22B9EC02289BF8030015C053 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22B9EC07289CFC5A0015C053 /* Currency.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22B9EC0B289CFED40015C053 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				22B9EC0C289CFEE40015C053 /* Error.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +245,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B9EC0F289D0A640015C053 /* NetworkService.swift in Sources */,
+				22B9EC04289BF8A20015C053 /* UIView+Extensions.swift in Sources */,
 				22610255289BE53C00600E9A /* AppDelegate.swift in Sources */,
+				22B9EC01289BF7810015C053 /* ConverterPresenter.swift in Sources */,
 				22610256289BE53C00600E9A /* SceneDelegate.swift in Sources */,
+				22B9EC08289CFC5A0015C053 /* Currency.swift in Sources */,
+				22B9EBFD289BF6C80015C053 /* ConverterViewController.swift in Sources */,
+				22B9EC06289CFA550015C053 /* HistoryPresenter.swift in Sources */,
+				22B9EBFF289BF6D40015C053 /* HistoryViewController.swift in Sources */,
+				22B9EC0D289CFEE40015C053 /* Error.swift in Sources */,
+				22B9EC13289E84080015C053 /* HistoryService.swift in Sources */,
+				22B9EC0A289CFE4A0015C053 /* DateFormatter+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
